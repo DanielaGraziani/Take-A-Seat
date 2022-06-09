@@ -1,0 +1,30 @@
+.error {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.imgContainer {
+  display: flex;
+  margin-top: 0px;
+}
+
+.errorImg {
+  justify-items: center;
+  margin-left: 360px;
+  margin-top: 0px;
+}
+
+@media (max-width: 560px) {
+  .imgContainer {
+    display: flex;
+  }
+  .errorImg {
+    align-items: center;
+   
+    width: 90%;
+    height: 445px;
+  }
+}

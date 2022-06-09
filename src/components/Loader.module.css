@@ -1,0 +1,25 @@
+.loader {
+  /* display: flex;
+  justify-content: center; */
+  height: 100vh;
+  position: relative;
+
+}
+
+.loaderCenter{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loading {
+  animation: spinner 2s linear infinite;
+  
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

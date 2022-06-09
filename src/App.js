@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MoviesGrid from "./components/MoviesGrid";
+import s from "./components/App.module.css";
+import { Route, Link } from "react-router-dom";
+import MoviesDetails from "./pages/MoviesDetails";
+import LandingPage from "./pages/LandingPage";
+import logo from "./img/pngwing.com.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <Link exact to="/"> 
+        <div className={s.container}>
+        <img
+          className={s.logoImg}
+          src={logo}
+        />
+        </div> 
+          <h1 className={s.title}>Take a seat</h1>
+        </Link>
       </header>
+      <main>
+        <Route exact path="/movies/:movieId">
+          <MoviesDetails />
+        </Route>
+        <Route exact path="/">
+          <LandingPage />
+        </Route>
+      </main>
     </div>
   );
 }
 
 export default App;
+
+/* rutas dinamicas con :movies */

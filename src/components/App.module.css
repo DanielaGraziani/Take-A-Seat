@@ -1,0 +1,30 @@
+.title {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: -100px;
+  margin-bottom: 30px;
+  -webkit-text-stroke: 4px black;
+
+
+}
+
+.logoImg {
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  /* left: 600px; */
+  margin-left: 40px;
+  top: -100px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    position: relative;
+    margin-top: 0px;
+    padding-top: 0px;
+}

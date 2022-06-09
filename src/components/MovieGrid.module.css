@@ -1,0 +1,18 @@
+.moviesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+
+/*
+    Esto lo que hace es que cuando tengamos un ancho de 560px vamos a sobreescribir la clase,
+    pero en vez de tener varias columnas de 230px tendremos una sola columna de 100%
+  */
+
+@media(max-width: 560px){
+    .moviesGrid{
+        grid-template-columns: repeat(auto-fill, 100%)};
+}
